@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="main">
+
+
+        <!-- <h2 style="color: black;">Stop Watch</h2> -->
+        <div class="stop_watch">
+            <!-- <h2>Stop Watch</h2> -->
+            <!-- <p id="para">00:00:00</p> -->
+            <div id="time">
+                <span class="digit" id="hr">
+                    00</span>
+                <span class="txt">:</span>
+                <span class="digit" id="min">
+                    00</span>
+                <span class="txt">:</span>
+                <span class="digit" id="sec">
+                    00</span>
+                <span class="txt" id="dot">:</span>
+                <span class="digit" id="count">
+                    00</span>
+            </div>
+
+            <div class="buttons">
+                <img src="images/stop.png" alt="" id="stop" onclick="stop()">
+                <img src="images/start.png" alt="" id="start" onclick="start()">
+                <img src="images/reset.png" alt="" id="reset" onclick="reset()">
+
+            </div>
+        </div>
+
+        <div class="display_history">
+
+            <button id="result" onclick="lap()">Show Result</button>
+            <div class="his">
+
+
+
+
+
+                <ul id="history"></ul>
+                <span id="close" style="position: fixed;">X</span>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
